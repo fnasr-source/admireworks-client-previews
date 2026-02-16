@@ -21,28 +21,28 @@
           "title": "Audit Presentation v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "Full recommendation walkthrough with findings, rationale, and prioritized action plan."
+          "notes": "Full recommendation walkthrough with findings, rationale, and a prioritized recommendation plan."
         },
         {
           "slug": "homepage-v1",
           "title": "Homepage Redesign v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "Homepage redesign focused on stronger conversion hierarchy, trust blocks, and clearer calls to action."
+          "notes": "Homepage recommendation prototype focused on stronger conversion hierarchy, trust blocks, and clearer calls to action."
         },
         {
           "slug": "product-boho-v1",
           "title": "Product Boho v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "Boho product page redesign with benefit-led messaging, stronger social proof, and purchase flow clarity."
+          "notes": "Boho product-page recommendation prototype with benefit-led messaging, stronger social proof, and purchase flow clarity."
         },
         {
           "slug": "product-waterrack-v1",
           "title": "Product WaterRack v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "WaterRack product page redesign with improved comparison framing, trust signals, and conversion guidance."
+          "notes": "WaterRack product-page recommendation prototype with improved comparison framing, trust signals, and conversion guidance."
         }
       ],
       "share_token": "genco26"

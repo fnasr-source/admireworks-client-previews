@@ -65,7 +65,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 72px 80px 78px;
   opacity: 0;
   visibility: hidden;
@@ -84,6 +84,7 @@ body {
   pointer-events: all;
   z-index: 10;
   transition: opacity 0.6s ease, transform 0.6s ease, visibility 0s 0s;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* ── Navigation ── */
@@ -206,7 +207,7 @@ body {
 }
 
 .review-hint {
-  margin: -8px 0 18px;
+  margin: 6px 0 18px;
   padding: 10px 14px;
   border-radius: 10px;
   border: 1px solid rgba(204, 159, 83, 0.45);
@@ -713,11 +714,6 @@ h3 {
   text-decoration: none;
   color: var(--text-dim);
   z-index: 100;
-  background: rgba(4, 17, 63, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 999px;
-  padding: 6px 10px;
-  backdrop-filter: blur(6px);
 }
 
 .pres-logo img {
@@ -735,7 +731,7 @@ h3 {
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .slide {
-    padding: 72px 30px 72px;
+    padding: 66px 24px 74px;
   }
 
   .slide-cover h1 {
@@ -766,17 +762,26 @@ h3 {
   }
 
   .review-hint {
-    margin-top: -4px;
+    margin-top: 4px;
   }
 
   .demo-card .demo-preview {
     height: 180px;
   }
+
+  .pres-logo {
+    top: 14px;
+    left: 14px;
+  }
+
+  .pres-logo .label {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
   .slide {
-    padding: 80px 14px 90px;
+    padding: 72px 12px 94px;
   }
 
   .slide-cover h1 {
@@ -821,13 +826,11 @@ h3 {
 
   .pres-logo {
     top: max(10px, env(safe-area-inset-top));
-    left: 10px;
-    padding: 5px 8px;
-    gap: 6px;
+    left: 12px;
   }
 
   .pres-logo img {
-    height: 22px;
+    height: 26px;
   }
 
   .pres-logo .label {
@@ -851,8 +854,35 @@ h3 {
     gap: 12px;
   }
 
+  .demo-card {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    align-items: stretch;
+  }
+
   .demo-card .demo-preview {
-    height: 154px;
+    height: 100%;
+    min-height: 124px;
+  }
+
+  .demo-card .demo-preview::after {
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding: 8px;
+  }
+
+  .demo-card .demo-info {
+    padding: 12px;
+  }
+
+  .demo-card .demo-info h4 {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .demo-card .demo-info p {
+    font-size: 11px;
+    line-height: 1.45;
   }
 
   .issue-card,

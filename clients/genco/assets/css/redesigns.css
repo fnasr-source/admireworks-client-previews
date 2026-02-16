@@ -1,31 +1,32 @@
 /* ===================================
-   GENCO REDESIGN PAGES — ADMIREWORKS THEME
+   GENCO REDESIGN PAGES — DESIGN SYSTEM
+   Brand: Deep green + cream white
    =================================== */
-@import url('/assets/theme.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-    --green-dark: var(--aw-navy-900);
-    --green: var(--aw-navy);
-    --green-mid: var(--aw-navy-700);
-    --green-light: var(--aw-gold);
-    --cream: var(--aw-cream);
-    --cream-dark: #f0eadf;
-    --white: var(--aw-surface);
-    --black: #0b1022;
-    --text-primary: var(--aw-ink);
-    --text-secondary: #2f3f70;
-    --text-muted: #66739f;
-    --accent-gold: var(--aw-gold);
-    --accent-warm: #ead9b8;
-    --red-sale: #b33232;
-    --red-bg: rgba(179, 50, 50, 0.12);
-    --orange: var(--aw-gold);
-    --blue: var(--aw-navy-700);
-    --border: var(--aw-line);
-    --shadow-sm: 0 4px 10px rgba(0, 26, 112, 0.07);
-    --shadow-md: 0 10px 22px rgba(0, 26, 112, 0.12);
-    --shadow-lg: 0 16px 34px rgba(0, 26, 112, 0.14);
-    --shadow-xl: 0 24px 56px rgba(0, 26, 112, 0.18);
+    --green-dark: #1a3a0a;
+    --green: #2D5016;
+    --green-mid: #3d6a20;
+    --green-light: #5a9e30;
+    --cream: #f8f5ef;
+    --cream-dark: #ede8dd;
+    --white: #ffffff;
+    --black: #111111;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
+    --text-muted: #888888;
+    --accent-gold: #c8a96e;
+    --accent-warm: #e8dcc8;
+    --red-sale: #d32f2f;
+    --red-bg: rgba(211, 47, 47, 0.08);
+    --orange: #e67e22;
+    --blue: #2980b9;
+    --border: rgba(0, 0, 0, 0.08);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.12);
     --radius-sm: 8px;
     --radius: 12px;
     --radius-lg: 16px;
@@ -46,7 +47,7 @@ html {
 }
 
 body {
-    font-family: var(--aw-font-body);
+    font-family: 'Inter', -apple-system, sans-serif;
     color: var(--text-primary);
     background: var(--white);
     -webkit-font-smoothing: antialiased;
@@ -124,7 +125,7 @@ a {
 }
 
 .header-logo {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-weight: 900;
     font-size: 22px;
     color: var(--green);
@@ -289,7 +290,7 @@ a {
 }
 
 .hero-content h1 {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 48px;
     font-weight: 800;
     line-height: 1.15;
@@ -365,7 +366,7 @@ a {
 }
 
 .section-header h2 {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -468,7 +469,7 @@ a {
 }
 
 .product-card .card-price {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: var(--green);
@@ -588,7 +589,7 @@ a {
 }
 
 .product-info h1 {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.2;
@@ -600,7 +601,7 @@ a {
 }
 
 .product-info .price-block .price {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 32px;
     font-weight: 800;
     color: var(--green);
@@ -878,7 +879,7 @@ a {
 }
 
 .review-summary .big-rating .number {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 48px;
     font-weight: 800;
     color: var(--green);
@@ -995,7 +996,7 @@ a {
 }
 
 .fbt-total .total-price {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 24px;
     font-weight: 800;
     color: var(--green);
@@ -1057,7 +1058,7 @@ a {
 }
 
 .sticky-atc .sticky-price {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: var(--green);
@@ -1182,7 +1183,7 @@ a {
 }
 
 .popup-box h3 {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 8px;
@@ -1239,7 +1240,7 @@ a {
 }
 
 .footer-col h4 {
-    font-family: var(--aw-font-display);
+    font-family: 'Outfit', sans-serif;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 16px;
@@ -1395,7 +1396,7 @@ a {
 .category-circle:hover span {
     color: var(--green);
 }
-/* Admireworks migration: mobile overflow safeguards */
+/* Mobile overflow safeguards */
 .product-detail table {
     display: block;
     width: 100%;

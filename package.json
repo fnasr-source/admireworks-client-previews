@@ -1,0 +1,12 @@
+{
+  "name": "admireworks-client-previews",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Client redesign preview hub for Admireworks.",
+  "scripts": {
+    "rebuild": "node scripts/rebuild-pages.js",
+    "create:client": "node scripts/create-client-preview.js",
+    "registry": "node scripts/update-registry.js",
+    "validate:links": "node scripts/validate-links.js"
+  }
+}

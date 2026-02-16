@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admireworks Client Previews</title>
+  <meta name="description" content="Admireworks redesign preview hub for client-facing review links.">
+  <link rel="stylesheet" href="/assets/theme.css">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/search.js" defer></script>
+</head>
+<body class="page page-index">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <header class="shell hero-shell">
+    <div class="brand-bar">
+      <img class="brand-logo" src="/assets/brand/Logo.png" alt="Admireworks logo">
+      <img class="brand-mark" src="/assets/brand/Brandmark.png" alt="Admireworks brandmark">
+    </div>
+    <p class="eyebrow">Admireworks Preview Hub</p>
+    <h1>Client Redesign Previews</h1>
+    <p class="lead">Share clean, render-safe links for each redesign without internal proposal context.</p>
+    <label class="search-wrap" for="searchInput">
+      <span>Search by client name or slug</span>
+      <input id="searchInput" type="search" placeholder="Try: sunbeam, atlas, checkout-v1" autocomplete="off">
+    </label>
+    <p class="build-stamp">Built from <code>preview-registry.json</code> · Feb 16, 2026</p>
+  </header>
+
+  <main class="shell" aria-live="polite">
+    <section id="previewGrid" class="preview-grid">
+      <article class="preview-card" data-search="genco genco pvw_genco_202602161546 audit-hub-v1 audit-presentation-v1 homepage-v1 product-boho-v1 product-waterrack-v1">
+  <div class="card-head">
+    <h2>Genco</h2>
+    <span class="status-badge status-ready-for-review">Ready for Review</span>
+  </div>
+  <p class="card-sub">genco · Updated Feb 16, 2026</p>
+  <div class="chip-row"><a class="chip" href="/s/genco26/audit-hub-v1/">audit-hub-v1</a><a class="chip" href="/s/genco26/audit-presentation-v1/">audit-presentation-v1</a><a class="chip" href="/s/genco26/homepage-v1/">homepage-v1</a><span class="chip chip-muted">+2 more</span></div>
+  <div class="card-actions">
+    <a class="btn btn-primary" href="/s/genco26/">Open Preview</a>
+    <a class="btn btn-secondary" href="/clients/genco/">Client Page</a>
+  </div>
+</article>
+<article class="preview-card" data-search="sunbeam co. sunbeam-co pvw_sunbeam_20260215 home-v1 pdp-v2 checkout-v1">
+  <div class="card-head">
+    <h2>Sunbeam Co.</h2>
+    <span class="status-badge status-ready-for-review">Ready for Review</span>
+  </div>
+  <p class="card-sub">sunbeam-co · Updated Feb 15, 2026</p>
+  <div class="chip-row"><a class="chip" href="/s/sb26/home-v1/">home-v1</a><a class="chip" href="/s/sb26/pdp-v2/">pdp-v2</a><a class="chip" href="/s/sb26/checkout-v1/">checkout-v1</a></div>
+  <div class="card-actions">
+    <a class="btn btn-primary" href="/s/sb26/">Open Preview</a>
+    <a class="btn btn-secondary" href="/clients/sunbeam-co/">Client Page</a>
+  </div>
+</article>
+<article class="preview-card" data-search="atlas wellness atlas-wellness pvw_atlas_20260214 home-v2 services-v1 booking-v1">
+  <div class="card-head">
+    <h2>Atlas Wellness</h2>
+    <span class="status-badge status-draft">Draft</span>
+  </div>
+  <p class="card-sub">atlas-wellness · Updated Feb 14, 2026</p>
+  <div class="chip-row"><a class="chip" href="/clients/atlas-wellness/home-v2/">home-v2</a><a class="chip" href="/clients/atlas-wellness/services-v1/">services-v1</a><a class="chip" href="/clients/atlas-wellness/booking-v1/">booking-v1</a></div>
+  <div class="card-actions">
+    <a class="btn btn-primary" href="/clients/atlas-wellness/">Open Preview</a>
+    <a class="btn btn-secondary" href="/clients/atlas-wellness/">Client Page</a>
+  </div>
+</article>
+    </section>
+    <p id="noResults" class="empty-state" hidden>No matching previews for the current search.</p>
+  </main>
+</body>
+</html>

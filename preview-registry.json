@@ -1,0 +1,111 @@
+{
+  "registry_version": 1,
+  "previews": [
+    {
+      "preview_id": "pvw_genco_202602161546",
+      "client_name": "Genco",
+      "client_slug": "genco",
+      "status": "Ready for Review",
+      "updated_at": "2026-02-16",
+      "items": [
+        {
+          "slug": "audit-hub-v1",
+          "title": "Audit Hub v1",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-16",
+          "notes": "Migrated from draft-peviews/genco/index.html and restyled to Admireworks navy and gold visual system."
+        },
+        {
+          "slug": "audit-presentation-v1",
+          "title": "Audit Presentation v1",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-16",
+          "notes": "Migrated interactive slide deck from draft-peviews/genco/presentation/index.html with brand font and token alignment."
+        },
+        {
+          "slug": "homepage-v1",
+          "title": "Homepage Redesign v1",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-16",
+          "notes": "Migrated redesign from draft-peviews/genco/redesigns/homepage.html; updated links and mobile-safe behavior for 360px widths."
+        },
+        {
+          "slug": "product-boho-v1",
+          "title": "Product Boho v1",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-16",
+          "notes": "Migrated redesign from draft-peviews/genco/redesigns/product-boho.html with centralized theme tokens and responsive overflow fixes."
+        },
+        {
+          "slug": "product-waterrack-v1",
+          "title": "Product WaterRack v1",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-16",
+          "notes": "Migrated redesign from draft-peviews/genco/redesigns/product-waterrack.html with tokenized palette and updated path references."
+        }
+      ],
+      "share_token": "genco26"
+    },
+    {
+      "preview_id": "pvw_sunbeam_20260215",
+      "client_name": "Sunbeam Co.",
+      "client_slug": "sunbeam-co",
+      "status": "Ready for Review",
+      "updated_at": "2026-02-15",
+      "share_token": "sb26",
+      "items": [
+        {
+          "slug": "home-v1",
+          "title": "Homepage v1",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-15",
+          "notes": "Refined hero narrative and stronger CTA hierarchy for lead capture."
+        },
+        {
+          "slug": "pdp-v2",
+          "title": "Product Detail Page v2",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-15",
+          "notes": "Moved trust badges above the fold and simplified variant selection."
+        },
+        {
+          "slug": "checkout-v1",
+          "title": "Checkout v1",
+          "status": "Draft",
+          "updated_at": "2026-02-14",
+          "notes": "Single-column mobile-first checkout with fewer fields and clearer totals."
+        }
+      ]
+    },
+    {
+      "preview_id": "pvw_atlas_20260214",
+      "client_name": "Atlas Wellness",
+      "client_slug": "atlas-wellness",
+      "status": "Draft",
+      "updated_at": "2026-02-14",
+      "items": [
+        {
+          "slug": "home-v2",
+          "title": "Homepage v2",
+          "status": "Draft",
+          "updated_at": "2026-02-14",
+          "notes": "Introduced testimonial strip and appointment funnel above the fold."
+        },
+        {
+          "slug": "services-v1",
+          "title": "Services Page v1",
+          "status": "Draft",
+          "updated_at": "2026-02-14",
+          "notes": "Service cards now grouped by treatment goal with clearer pricing anchors."
+        },
+        {
+          "slug": "booking-v1",
+          "title": "Booking Flow v1",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-13",
+          "notes": "Step-based booking flow with concise form labels and friction check points."
+        }
+      ]
+    }
+  ]
+}

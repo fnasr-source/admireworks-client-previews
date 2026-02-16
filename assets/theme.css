@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Jaymont';
+  src: url('/assets/brand/fonts/jaymont/Jaymont-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jaymont';
+  src: url('/assets/brand/fonts/jaymont/Jaymont-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('/assets/brand/fonts/akkurat-pro/AkkuratPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('/assets/brand/fonts/akkurat-pro/AkkuratPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('/assets/brand/fonts/akkurat-pro/AkkuratPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noor';
+  src: url('/assets/brand/fonts/noor/Noor-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noor';
+  src: url('/assets/brand/fonts/noor/Noor-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --aw-navy: #001A70;
+  --aw-navy-900: #00134f;
+  --aw-navy-700: #16388a;
+  --aw-gold: #CC9F53;
+  --aw-gold-soft: #e6cb99;
+  --aw-bg: #f6f3ec;
+  --aw-cream: #fbf9f4;
+  --aw-surface: #ffffff;
+  --aw-ink: #111730;
+  --aw-ink-soft: #43507a;
+  --aw-line: rgba(0, 26, 112, 0.14);
+  --aw-shadow-sm: 0 8px 18px rgba(0, 26, 112, 0.08);
+  --aw-shadow-lg: 0 26px 64px rgba(0, 26, 112, 0.16);
+
+  --aw-font-display: 'Jaymont', 'Georgia', serif;
+  --aw-font-body: 'Akkurat Pro', 'Helvetica Neue', sans-serif;
+  --aw-font-ar: 'Noor', 'Tahoma', sans-serif;
+}
+
+[lang='ar'],
+[dir='rtl'] {
+  font-family: var(--aw-font-ar);
+}
+
+.aw-brand-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.aw-brand-logo {
+  height: 36px;
+  width: auto;
+}
+
+.aw-brandmark {
+  height: 32px;
+  width: auto;
+}

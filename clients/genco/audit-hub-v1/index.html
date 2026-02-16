@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genco | Store Audit and Redesign Deliverables</title>
+  <link rel="stylesheet" href="/assets/theme.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--aw-font-body);
+      background:
+        radial-gradient(circle at 12% 16%, rgba(204, 159, 83, 0.16), transparent 35%),
+        radial-gradient(circle at 88% 80%, rgba(22, 56, 138, 0.22), transparent 44%),
+        linear-gradient(140deg, #04104a 0%, #001a70 52%, #08113a 100%);
+      color: #f6f7fb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+
+    .brand-strip {
+      width: min(980px, 100%);
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .brand-strip img.logo {
+      height: 40px;
+      width: auto;
+    }
+
+    .brand-strip img.mark {
+      height: 30px;
+      width: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 18px;
+      border: 1px solid var(--aw-gold);
+      border-radius: 30px;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--aw-gold-soft);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: var(--aw-font-display);
+      font-size: clamp(1.9rem, 4vw, 3.1rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+      letter-spacing: 0.01em;
+      line-height: 1.08;
+    }
+
+    h1 span { color: var(--aw-gold); }
+
+    .subtitle {
+      font-size: 15px;
+      color: #cad2ef;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 300;
+      max-width: 66ch;
+      line-height: 1.5;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+      gap: 16px;
+      max-width: 980px;
+      width: 100%;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 16px;
+      padding: 24px;
+      text-decoration: none;
+      color: #f2f4fe;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .card:hover {
+      border-color: var(--aw-gold);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.26);
+      transform: translateY(-4px);
+    }
+
+    .card .icon {
+      font-size: 30px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .card h3 {
+      font-family: var(--aw-font-display);
+      font-size: 1.16rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: #d7dcf2;
+      line-height: 1.6;
+    }
+
+    .card .arrow {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.74rem;
+      color: var(--aw-gold-soft);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .footer-note {
+      margin-top: 26px;
+      font-size: 12px;
+      color: #b8c1e2;
+      text-align: center;
+    }
+
+    @media (max-width: 420px) {
+      body {
+        padding-inline: 14px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+
+      .brand-strip img.logo {
+        height: 34px;
+      }
+
+      .brand-strip img.mark {
+        height: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="brand-strip">
+    <img class="logo" src="/assets/brand/Logo.png" alt="Admireworks logo">
+    <img class="mark" src="/assets/brand/Brandmark.png" alt="Admireworks brandmark">
+  </div>
+
+  <div class="badge">Confidential Client Deliverable</div>
+  <h1>Genco <span>Store Audit</span></h1>
+  <p class="subtitle">Complete analysis, recommendations, and redesigned pages prepared in the Admireworks visual system.</p>
+
+  <div class="cards">
+    <a href="/clients/genco/audit-presentation-v1/" class="card">
+      <span class="icon">📊</span>
+      <h3>Audit Presentation</h3>
+      <p>Full visual slide deck covering findings, recommendations, and prioritized action plan.</p>
+      <span class="arrow">Open presentation</span>
+    </a>
+    <a href="/clients/genco/homepage-v1/" class="card">
+      <span class="icon">🏠</span>
+      <h3>Homepage Redesign</h3>
+      <p>Enhanced hero, sticky header, WhatsApp widget, social proof, and conversion-focused calls to action.</p>
+      <span class="arrow">Open redesign</span>
+    </a>
+    <a href="/clients/genco/product-boho-v1/" class="card">
+      <span class="icon">☕</span>
+      <h3>The Boho Coffee Corner</h3>
+      <p>Product page rebuild with direct-response copy, reviews, urgency, and bundled offer sections.</p>
+      <span class="arrow">Open redesign</span>
+    </a>
+    <a href="/clients/genco/product-waterrack-v1/" class="card">
+      <span class="icon">💧</span>
+      <h3>WaterRack EasyFlow 3-Tier</h3>
+      <p>Flagship PDP with benefit-led copy, comparison table, trust proof, and sticky purchase controls.</p>
+      <span class="arrow">Open redesign</span>
+    </a>
+  </div>
+
+  <p class="footer-note">Prepared by Admireworks · February 2026</p>
+</body>
+</html>

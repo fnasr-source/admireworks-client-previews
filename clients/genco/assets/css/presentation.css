@@ -43,14 +43,17 @@ body {
     url('../images/bg-presentation-premium.png') center/cover no-repeat;
   color: var(--text);
   overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
+  min-height: 100dvh;
 }
 
 /* ── Slide Container ── */
 .slides-container {
   width: 100vw;
   height: 100vh;
+  min-height: 100dvh;
   position: relative;
 }
 
@@ -63,13 +66,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px 80px;
+  padding: 72px 80px 78px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease, visibility 0s 0.6s;
   pointer-events: none;
   overflow-y: auto;
+  overflow-x: hidden;
   z-index: 1;
 }
 
@@ -186,6 +190,7 @@ body {
   font-weight: 700;
   margin-bottom: 8px;
   letter-spacing: -0.5px;
+  line-height: 1.15;
 }
 
 .slide h2 span {
@@ -197,6 +202,7 @@ body {
   color: var(--text-muted);
   margin-bottom: 36px;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .review-hint {
@@ -707,6 +713,11 @@ h3 {
   text-decoration: none;
   color: var(--text-dim);
   z-index: 100;
+  background: rgba(4, 17, 63, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 6px 10px;
+  backdrop-filter: blur(6px);
 }
 
 .pres-logo img {
@@ -724,7 +735,7 @@ h3 {
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .slide {
-    padding: 40px 30px;
+    padding: 72px 30px 72px;
   }
 
   .slide-cover h1 {
@@ -757,15 +768,25 @@ h3 {
   .review-hint {
     margin-top: -4px;
   }
+
+  .demo-card .demo-preview {
+    height: 180px;
+  }
 }
 
 @media (max-width: 600px) {
   .slide {
-    padding: 32px 16px 52px;
+    padding: 80px 14px 90px;
   }
 
   .slide-cover h1 {
     font-size: 26px;
+  }
+
+  .slide-cover .badge {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    margin-bottom: 18px;
   }
 
   .slide h2 {
@@ -788,17 +809,25 @@ h3 {
   }
 
   .nav-controls {
-    right: 14px;
-    bottom: 14px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 10px;
+    padding: 7px 9px;
+    border-radius: 999px;
+    background: rgba(6, 18, 58, 0.86);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(6px);
   }
 
   .pres-logo {
-    top: 12px;
-    left: 12px;
+    top: max(10px, env(safe-area-inset-top));
+    left: 10px;
+    padding: 5px 8px;
+    gap: 6px;
   }
 
   .pres-logo img {
-    height: 26px;
+    height: 22px;
   }
 
   .pres-logo .label {
@@ -816,5 +845,19 @@ h3 {
   .client-next-steps {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .demo-grid {
+    gap: 12px;
+  }
+
+  .demo-card .demo-preview {
+    height: 154px;
+  }
+
+  .issue-card,
+  .phase-card,
+  .comparison-col {
+    padding-inline: 14px;
   }
 }

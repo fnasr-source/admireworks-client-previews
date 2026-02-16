@@ -16,10 +16,11 @@
         linear-gradient(140deg, #04104a 0%, #001a70 52%, #08113a 100%);
       color: #f6f7fb;
       min-height: 100vh;
+      min-height: 100dvh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       padding: 32px 20px;
     }
 
@@ -140,7 +141,7 @@
 
     @media (max-width: 420px) {
       body {
-        padding-inline: 14px;
+        padding: 18px 14px 24px;
       }
 
       .card {
@@ -155,6 +156,35 @@
         height: 24px;
       }
     }
+
+    @media (max-width: 700px) {
+      body {
+        padding-top: 18px;
+      }
+
+      .brand-strip {
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+
+      .badge {
+        margin-bottom: 12px;
+      }
+
+      .subtitle {
+        margin-bottom: 20px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .card {
+        padding: 18px 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -163,7 +193,7 @@
     <img class="mark" src="/assets/brand/Brandmark.png" alt="Admireworks brandmark">
   </div>
 
-  <div class="badge">Confidential Client Deliverable</div>
+  <div class="badge">Client Review</div>
   <h1>Genco <span>Store Audit</span></h1>
   <p class="subtitle">Complete analysis, recommendations, and clickable redesign prototypes prepared for review.</p>
 

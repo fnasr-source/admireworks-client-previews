@@ -199,6 +199,17 @@ body {
   font-weight: 300;
 }
 
+.review-hint {
+  margin: -8px 0 18px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(204, 159, 83, 0.45);
+  background: rgba(204, 159, 83, 0.08);
+  color: #d9c8a3;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 h3 {
   font-family: var(--aw-font-display);
   font-size: 18px;
@@ -741,6 +752,10 @@ h3 {
 
   .demo-grid {
     grid-template-columns: 1fr;
+  }
+
+  .review-hint {
+    margin-top: -4px;
   }
 }
 

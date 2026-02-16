@@ -556,9 +556,47 @@ h3 {
 .slide-cta .cta-text {
   font-size: 16px;
   color: var(--text-muted);
-  max-width: 550px;
-  margin: 0 auto 32px;
+  max-width: 760px;
+  margin: 0 auto 24px;
   line-height: 1.6;
+}
+
+.client-next-steps {
+  width: min(900px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.client-step {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-card);
+  padding: 16px;
+  text-align: left;
+  min-width: 0;
+}
+
+.client-step .step-label {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--accent);
+  color: var(--accent-light);
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  margin-bottom: 9px;
+}
+
+.client-step p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
 }
 
 .cta-button {
@@ -758,5 +796,10 @@ h3 {
     padding-inline: 14px;
     text-align: center;
     overflow-wrap: anywhere;
+  }
+
+  .client-next-steps {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }

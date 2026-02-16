@@ -66,6 +66,17 @@ function shareItemPath(preview, item) {
   return preview.share_token ? `/s/${preview.share_token}/${item.slug}/` : humanItemPath(preview, item);
 }
 
+function shareLandingPath(preview) {
+  if (preview.share_home_item_slug) {
+    const preferred = preview.items.find((item) => item.slug === preview.share_home_item_slug);
+    if (preferred) {
+      return humanItemPath(preview, preferred);
+    }
+  }
+
+  return humanClientPath(preview);
+}
+
 function renderRedirectPage(targetPath, label) {
   return `<!doctype html>
 <html lang="en">
@@ -177,11 +188,6 @@ function renderClientPage(preview) {
         : '<li>No notes yet.</li>';
 
       const shareLink = shareItemPath(preview, item);
-      const humanLink = humanItemPath(preview, item);
-
-      const tokenAction = preview.share_token
-        ? `<a class="btn btn-secondary" href="${escapeHtml(humanLink)}">Human URL</a>`
-        : '';
 
       return `<article class="variant-card">
   <div class="card-head">
@@ -195,15 +201,10 @@ function renderClientPage(preview) {
   <ul class="notes-list">${notesMarkup}</ul>
   <div class="card-actions">
     <a class="btn btn-primary" href="${escapeHtml(shareLink)}">Open Preview</a>
-    ${tokenAction}
   </div>
 </article>`;
     })
     .join('\n');
-
-  const shareBlock = preview.share_token
-    ? `<p class="share-path">Token share base: <code>${escapeHtml(shareClientPath(preview))}</code></p>`
-    : '';
 
   return `<!doctype html>
 <html lang="en">
@@ -230,7 +231,6 @@ function renderClientPage(preview) {
     <p class="lead">${escapeHtml(preview.items.length)} active page variants · Last updated ${escapeHtml(
       formatDate(preview.updated_at)
     )}</p>
-    ${shareBlock}
   </header>
 
   <main class="shell">
@@ -269,7 +269,7 @@ function rebuild() {
 
     writeFile(
       path.join(shareRoot, preview.share_token, 'index.html'),
-      renderRedirectPage(humanClientPath(preview), `${preview.client_name} preview`)
+      renderRedirectPage(shareLandingPath(preview), `${preview.client_name} preview`)
     );
 
     preview.items.forEach((item) => {

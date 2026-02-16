@@ -7,41 +7,42 @@
       "client_slug": "genco",
       "status": "Ready for Review",
       "updated_at": "2026-02-16",
+      "share_home_item_slug": "audit-hub-v1",
       "items": [
         {
           "slug": "audit-hub-v1",
           "title": "Audit Hub v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "Migrated from draft-peviews/genco/index.html and restyled to Admireworks navy and gold visual system."
+          "notes": "Start here for a guided review of the recommendations and redesigned pages."
         },
         {
           "slug": "audit-presentation-v1",
           "title": "Audit Presentation v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "Migrated interactive slide deck from draft-peviews/genco/presentation/index.html with brand font and token alignment."
+          "notes": "Full recommendation walkthrough with findings, rationale, and prioritized action plan."
         },
         {
           "slug": "homepage-v1",
           "title": "Homepage Redesign v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "Migrated redesign from draft-peviews/genco/redesigns/homepage.html; updated links and mobile-safe behavior for 360px widths."
+          "notes": "Homepage redesign focused on stronger conversion hierarchy, trust blocks, and clearer calls to action."
         },
         {
           "slug": "product-boho-v1",
           "title": "Product Boho v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "Migrated redesign from draft-peviews/genco/redesigns/product-boho.html with centralized theme tokens and responsive overflow fixes."
+          "notes": "Boho product page redesign with benefit-led messaging, stronger social proof, and purchase flow clarity."
         },
         {
           "slug": "product-waterrack-v1",
           "title": "Product WaterRack v1",
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
-          "notes": "Migrated redesign from draft-peviews/genco/redesigns/product-waterrack.html with tokenized palette and updated path references."
+          "notes": "WaterRack product page redesign with improved comparison framing, trust signals, and conversion guidance."
         }
       ],
       "share_token": "genco26"

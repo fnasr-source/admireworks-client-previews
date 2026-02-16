@@ -109,6 +109,12 @@ function readRegistry() {
       itemSlugs.add(item.slug);
       assertValidStatus(item.status || preview.status, `item status for ${preview.client_slug}/${item.slug}`);
     });
+
+    if (preview.share_home_item_slug && !preview.items.some((item) => item.slug === preview.share_home_item_slug)) {
+      throw new Error(
+        `share_home_item_slug "${preview.share_home_item_slug}" does not match any item in ${preview.client_slug}.`
+      );
+    }
   });
 
   return data;

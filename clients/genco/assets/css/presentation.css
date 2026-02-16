@@ -380,6 +380,7 @@ h3 {
   border-radius: 10px;
   font-size: 13px;
   transition: var(--transition);
+  overflow-wrap: anywhere;
 }
 
 .checklist li:hover {
@@ -466,6 +467,10 @@ h3 {
   line-height: 1.8;
 }
 
+.phase-card ul li {
+  overflow-wrap: anywhere;
+}
+
 .phase-card ul li::before {
   content: "→ ";
   color: var(--green-light);
@@ -525,11 +530,14 @@ h3 {
 .demo-card .demo-info h4 {
   font-size: 15px;
   margin-bottom: 6px;
+  overflow-wrap: anywhere;
 }
 
 .demo-card .demo-info p {
   font-size: 12px;
   color: var(--text-muted);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 /* ── CTA / Final Slide ── */
@@ -742,5 +750,13 @@ h3 {
 
   .pres-logo .label {
     display: none;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding-inline: 14px;
+    text-align: center;
+    overflow-wrap: anywhere;
   }
 }

@@ -128,6 +128,7 @@ h1 {
   box-shadow: var(--aw-shadow-sm);
   display: grid;
   gap: 0.72rem;
+  min-width: 0;
 }
 
 .card-head {
@@ -142,12 +143,15 @@ h1 {
   font-family: var(--aw-font-display);
   font-size: 1.08rem;
   color: var(--aw-navy);
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .card-sub {
   margin: 0;
   color: var(--aw-ink-soft);
   font-size: 0.91rem;
+  overflow-wrap: anywhere;
 }
 
 .chip-row {
@@ -253,6 +257,10 @@ h1 {
   line-height: 1.45;
 }
 
+.notes-list li {
+  overflow-wrap: anywhere;
+}
+
 .variant-card h3 {
   margin: 0;
   font-size: 0.86rem;
@@ -282,6 +290,7 @@ h1 {
   margin: 0;
   font-size: 0.88rem;
   color: var(--aw-ink-soft);
+  overflow-wrap: anywhere;
 }
 
 .empty-state {
@@ -294,6 +303,7 @@ code {
   border-radius: 0.42rem;
   padding: 0.12rem 0.35rem;
   font-size: 0.86em;
+  overflow-wrap: anywhere;
 }
 
 @keyframes fade-rise {
@@ -337,5 +347,9 @@ code {
 
   .btn {
     flex: 1;
+  }
+
+  .chip-row {
+    width: 100%;
   }
 }

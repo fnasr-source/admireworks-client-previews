@@ -33,21 +33,11 @@ body {
 
 .topbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 12px;
-}
-
-.crumb {
-  color: var(--muted);
-  text-decoration: none;
-  font-size: 0.92rem;
-}
-
-.crumb:hover {
-  color: var(--aw-navy);
 }
 
 .hero {
@@ -341,6 +331,10 @@ h1 {
   .page {
     width: min(1080px, 96vw);
     padding: 14px 0 22px;
+  }
+
+  .topbar {
+    margin-bottom: 10px;
   }
 
   .hero {

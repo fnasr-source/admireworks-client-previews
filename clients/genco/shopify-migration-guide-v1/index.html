@@ -12,15 +12,13 @@
     <div class="topbar">
       <div class="aw-brand-strip">
         <img class="aw-brand-logo" src="/assets/brand/Logo.png" alt="Admireworks logo">
-        <img class="aw-brandmark" src="/assets/brand/Brandmark.png" alt="Admireworks brandmark">
       </div>
-      <a class="crumb" href="/clients/genco/">Back to Genco previews</a>
     </div>
 
     <section class="hero">
       <span class="eyebrow">Client Guidance</span>
       <h1>Genco Shopify Migration<br>Meta Ads Safe Cutover Plan</h1>
-      <p>This page guides the move from the current store to a new Shopify build while protecting Meta Ads continuity, attribution quality, and conversion performance.</p>
+      <p>Simple launch guidance for moving to a new Shopify store without hurting Meta Ads delivery, tracking accuracy, or conversion continuity.</p>
 
       <div class="meta-row">
         <div class="meta">
@@ -40,22 +38,22 @@
 
     <section class="grid">
       <article class="card">
-        <h2>Core Rules</h2>
+        <h2>Do This First</h2>
         <ul class="list">
           <li>Keep <strong>the same live domain</strong> on launch day (`gencostores.com`).</li>
-          <li>Keep high-spend landing page paths unchanged where possible (`/products/...`, `/collections/...`, `/pages/...`).</li>
-          <li>If a URL must change, set a <strong>301 redirect</strong> before launch and test with `utm_` and `fbclid` parameters.</li>
-          <li>Use the same Meta Pixel ID and enable Shopify Conversions API in the new store.</li>
+          <li>Keep high-spend landing paths unchanged where possible (`/products/...`, `/collections/...`, `/pages/...`).</li>
+          <li>For any changed path, publish a <strong>301 redirect</strong> before launch and test with `utm_` and `fbclid` parameters.</li>
+          <li>Use the same Meta Pixel ID and enable Shopify Conversions API in the new store setup.</li>
         </ul>
       </article>
 
       <article class="card">
-        <h2>Why It Matters</h2>
+        <h2>Why This Works</h2>
         <ul class="list">
-          <li><span class="why">Stable URLs reduce ad disapprovals and avoid last-minute campaign edits.</span></li>
-          <li><span class="why">301 mapping preserves link equity and lowers traffic leakage from old links.</span></li>
-          <li><span class="why">Pixel + CAPI continuity keeps attribution comparable before vs after migration.</span></li>
-          <li><span class="why">Correct launch sequencing protects delivery during algorithm re-learning windows.</span></li>
+          <li><span class="why">Stable URLs avoid ad-side disruption and minimize urgent campaign edits.</span></li>
+          <li><span class="why">Redirect mapping protects traffic from old links and saved ads.</span></li>
+          <li><span class="why">Pixel + CAPI continuity keeps attribution comparable before and after cutover.</span></li>
+          <li><span class="why">Clean launch sequencing reduces performance volatility in the first days.</span></li>
         </ul>
       </article>
     </section>
@@ -63,29 +61,29 @@
     <section class="ownership">
       <article class="owner dev">
         <span class="tag">Client Dev Team</span>
-        <h4>Owns Technical Migration</h4>
+        <h4>Main Technical Ownership</h4>
         <ul>
           <li>Domain connection and TLS health in Shopify.</li>
           <li>URL mapping and 301 redirect import.</li>
-          <li>Theme QA for mobile speed and checkout flow.</li>
+          <li>Theme QA for mobile UX and checkout flow.</li>
           <li>Event firing checks on all critical templates.</li>
         </ul>
       </article>
 
       <article class="owner aw">
         <span class="tag">Admireworks</span>
-        <h4>Owns Ads and Measurement QA</h4>
+        <h4>Ads and Measurement Ownership</h4>
         <ul>
           <li>Identify top ad landing pages to preserve first.</li>
           <li>Validate Pixel and CAPI event quality post-cutover.</li>
           <li>Monitor CPA, CVR, and event-match quality after launch.</li>
-          <li>Advise on campaign-level risk controls during transition.</li>
+          <li>Guide campaign-level risk controls during transition.</li>
         </ul>
       </article>
 
       <article class="owner shared">
         <span class="tag">Shared</span>
-        <h4>Joint Go-Live Decisions</h4>
+        <h4>Joint Decision Points</h4>
         <ul>
           <li>Final go/no-go check before DNS switch.</li>
           <li>Launch window selection (lower traffic hours).</li>
@@ -101,7 +99,7 @@
           <span class="num">1</span>
           <div>
             <h4>Pre-Launch (7-10 days before)</h4>
-            <small>Build confidence before traffic touches the new store</small>
+            <small>Prepare all technical and tracking dependencies first</small>
           </div>
         </div>
         <ul class="list">
@@ -117,7 +115,7 @@
           <span class="num">2</span>
           <div>
             <h4>Launch Window (Cutover day)</h4>
-            <small>Protect active campaigns while DNS and routes switch</small>
+            <small>Switch safely while paid traffic is still active</small>
           </div>
         </div>
         <ul class="list">
@@ -133,7 +131,7 @@
           <span class="num">3</span>
           <div>
             <h4>First 72 Hours</h4>
-            <small>Catch regressions early and stabilize performance</small>
+            <small>Monitor, fix quickly, and stabilize results</small>
           </div>
         </div>
         <ul class="list">
@@ -146,7 +144,7 @@
     </section>
 
     <section class="check">
-      <h2>Go/No-Go Decision Gates</h2>
+      <h2>Go / Hold Checks</h2>
       <div class="check-grid">
         <article class="flag">
           <strong class="ok">Go</strong>

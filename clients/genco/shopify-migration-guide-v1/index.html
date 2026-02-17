@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genco Shopify Migration One-Pager</title>
+  <meta name="description" content="Admireworks migration guidance for moving Genco to a new Shopify store without disrupting Meta Ads performance.">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="topbar">
+      <div class="aw-brand-strip">
+        <img class="aw-brand-logo" src="/assets/brand/Logo.png" alt="Admireworks logo">
+        <img class="aw-brandmark" src="/assets/brand/Brandmark.png" alt="Admireworks brandmark">
+      </div>
+      <a class="crumb" href="/clients/genco/">Back to Genco previews</a>
+    </div>
+
+    <section class="hero">
+      <span class="eyebrow">Client Guidance</span>
+      <h1>Genco Shopify Migration<br>Meta Ads Safe Cutover Plan</h1>
+      <p>This page guides the move from the current store to a new Shopify build while protecting Meta Ads continuity, attribution quality, and conversion performance.</p>
+
+      <div class="meta-row">
+        <div class="meta">
+          <strong>Current Store</strong>
+          <span>https://gencostores.com/</span>
+        </div>
+        <div class="meta">
+          <strong>Main Goal</strong>
+          <span>Zero paid-traffic disruption</span>
+        </div>
+        <div class="meta">
+          <strong>Approach</strong>
+          <span>URL continuity + tracking continuity</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Core Rules</h2>
+        <ul class="list">
+          <li>Keep <strong>the same live domain</strong> on launch day (`gencostores.com`).</li>
+          <li>Keep high-spend landing page paths unchanged where possible (`/products/...`, `/collections/...`, `/pages/...`).</li>
+          <li>If a URL must change, set a <strong>301 redirect</strong> before launch and test with `utm_` and `fbclid` parameters.</li>
+          <li>Use the same Meta Pixel ID and enable Shopify Conversions API in the new store.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Why It Matters</h2>
+        <ul class="list">
+          <li><span class="why">Stable URLs reduce ad disapprovals and avoid last-minute campaign edits.</span></li>
+          <li><span class="why">301 mapping preserves link equity and lowers traffic leakage from old links.</span></li>
+          <li><span class="why">Pixel + CAPI continuity keeps attribution comparable before vs after migration.</span></li>
+          <li><span class="why">Correct launch sequencing protects delivery during algorithm re-learning windows.</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="ownership">
+      <article class="owner dev">
+        <span class="tag">Client Dev Team</span>
+        <h4>Owns Technical Migration</h4>
+        <ul>
+          <li>Domain connection and TLS health in Shopify.</li>
+          <li>URL mapping and 301 redirect import.</li>
+          <li>Theme QA for mobile speed and checkout flow.</li>
+          <li>Event firing checks on all critical templates.</li>
+        </ul>
+      </article>
+
+      <article class="owner aw">
+        <span class="tag">Admireworks</span>
+        <h4>Owns Ads and Measurement QA</h4>
+        <ul>
+          <li>Identify top ad landing pages to preserve first.</li>
+          <li>Validate Pixel and CAPI event quality post-cutover.</li>
+          <li>Monitor CPA, CVR, and event-match quality after launch.</li>
+          <li>Advise on campaign-level risk controls during transition.</li>
+        </ul>
+      </article>
+
+      <article class="owner shared">
+        <span class="tag">Shared</span>
+        <h4>Joint Go-Live Decisions</h4>
+        <ul>
+          <li>Final go/no-go check before DNS switch.</li>
+          <li>Launch window selection (lower traffic hours).</li>
+          <li>Rollback trigger thresholds and response owner.</li>
+          <li>Daily checkpoint in first 72 hours.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="steps">
+      <article class="step">
+        <div class="step-head">
+          <span class="num">1</span>
+          <div>
+            <h4>Pre-Launch (7-10 days before)</h4>
+            <small>Build confidence before traffic touches the new store</small>
+          </div>
+        </div>
+        <ul class="list">
+          <li>Export current sitemap and list top paid landing URLs.</li>
+          <li>Create old-to-new URL mapping sheet and mark redirect owner.</li>
+          <li>Set Meta integration in Shopify with maximum data sharing and verify events in test mode.</li>
+          <li>Test full funnel from ad click to purchase with query parameters preserved.</li>
+        </ul>
+      </article>
+
+      <article class="step">
+        <div class="step-head">
+          <span class="num">2</span>
+          <div>
+            <h4>Launch Window (Cutover day)</h4>
+            <small>Protect active campaigns while DNS and routes switch</small>
+          </div>
+        </div>
+        <ul class="list">
+          <li>Switch primary domain to new store and confirm canonical domain behavior.</li>
+          <li>Publish redirects and run spot checks on highest-spend ad URLs.</li>
+          <li>Confirm `ViewContent`, `AddToCart`, `InitiateCheckout`, and `Purchase` in Meta Events Manager.</li>
+          <li>Keep budget stable; avoid major campaign edits in the same hour unless critical.</li>
+        </ul>
+      </article>
+
+      <article class="step">
+        <div class="step-head">
+          <span class="num">3</span>
+          <div>
+            <h4>First 72 Hours</h4>
+            <small>Catch regressions early and stabilize performance</small>
+          </div>
+        </div>
+        <ul class="list">
+          <li>Track CPC, CTR, CVR, CPA, and purchase event volume vs previous baseline.</li>
+          <li>Fix any redirect misses immediately; prioritize high-spend URLs first.</li>
+          <li>Review event quality (deduplication, match quality, currency/value accuracy).</li>
+          <li>If severe drop appears, pause only affected ads and use rollback plan for impacted routes.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="check">
+      <h2>Go/No-Go Decision Gates</h2>
+      <div class="check-grid">
+        <article class="flag">
+          <strong class="ok">Go</strong>
+          <p>Critical events fire correctly, top landing URLs resolve correctly, checkout works on mobile, and no major attribution anomalies in the first live checks.</p>
+        </article>
+        <article class="flag">
+          <strong class="warn">No-Go / Hold</strong>
+          <p>Missing purchase events, redirect failures on paid URLs, checkout blockers, or major mismatch between ad clicks and on-site sessions.</p>
+        </article>
+      </div>
+    </section>
+
+    <p class="footer">Prepared by Admireworks for Genco development and marketing coordination. Last updated: February 17, 2026.</p>
+  </main>
+</body>
+</html>

@@ -6,7 +6,7 @@
       "client_name": "Genco",
       "client_slug": "genco",
       "status": "Ready for Review",
-      "updated_at": "2026-02-16",
+      "updated_at": "2026-02-17",
       "share_home_item_slug": "audit-hub-v1",
       "items": [
         {
@@ -43,6 +43,13 @@
           "status": "Ready for Review",
           "updated_at": "2026-02-16",
           "notes": "WaterRack product-page recommendation prototype with improved comparison framing, trust signals, and conversion guidance."
+        },
+        {
+          "slug": "shopify-migration-guide-v1",
+          "title": "Shopify Migration Guide v1",
+          "status": "Ready for Review",
+          "updated_at": "2026-02-17",
+          "notes": "One-page migration checklist for moving to the new Shopify store without disrupting Meta Ads performance. Includes ownership split between Genco dev team and Admireworks."
         }
       ],
       "share_token": "genco26"
